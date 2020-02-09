@@ -3,20 +3,20 @@ package oficina;
 public class Empleado {
 	private String name;
 	private String lastName;
-	private String birthDate;
+	private int age;
 	private String email;
 	private int phoneNumber;
-	private int ID;
+	//private int ID;
 	
-	public Empleado(String name, String lastName, String birthDate, String email,
+	public Empleado(String name, String lastName, int age, String email,
 					int phoneNumber) {
 		
 		this.name = name;
 		this.lastName = lastName;
-		this.birthDate = birthDate;
+		this.age = age;
 		this.email = email;
 		this.phoneNumber = phoneNumber;
-		this.ID = getID();
+		//this.ID = getID();
 		
 	}
 
@@ -36,12 +36,12 @@ public class Empleado {
 		this.lastName = lastName;
 	}
 
-	public String getBirthDate() {
-		return birthDate;
+	public int getAge() {
+		return age;
 	}
 
-	public void setBirthDate(String birthDate) {
-		this.birthDate = birthDate;
+	public void setAge(int age) {
+		this.age = age;
 	}
 
 	public String getEmail() {
@@ -60,13 +60,13 @@ public class Empleado {
 		this.phoneNumber = phoneNumber;
 	}
 
-	public int getID() {
+/*	public int getID() {
 		return ID;
 	}
 
 	public void setID(int iD) {
 		ID = iD;
-	}
+	}*/
 	
 	
 }
